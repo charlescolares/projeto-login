@@ -20,13 +20,23 @@
 
 body {
     background-color: var(--cor2);
+    width: 100vw;
+    height: 100vw;
 }
 
-main {
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
     height: 80vh;
     background-color: white;
     border-radius: 20px;
@@ -34,13 +44,14 @@ main {
 }
 
 div#imagem {
-    background: url(..//imagens/metal.jpg) left center  no-repeat;
+    display: block;
+    background: url(..//imagens/metal.jpg) left bottom  no-repeat;
     background-size: cover; 
     height: 30vh;
-    border-radius: 20px 20px 0px 0px;
 }
 
 div#formulario{
+    display: block;
     margin: 10px
 }
 
@@ -51,8 +62,12 @@ div#formulario > h1{
     font-weight: 800;
 }
 
+div#formulario > p{
+    margin-bottom: 5px;
+}
 
 input {
+    width: 100%;
     padding: 10px;
     background-color: #92cfca;
     border-radius: 5px;
@@ -68,7 +83,7 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5px;
+    padding: 1px;
     background-color: var(--cor2);
     border-radius: 5px;
     margin-bottom: 5px;
@@ -79,7 +94,7 @@ input:focus {
     color: white;
     border-radius: 5px;
     border: none;
-    width:250px;
+    width: 100%;
     padding: 10px;
     cursor: pointer;
     margin-bottom: 5px;
@@ -94,7 +109,7 @@ input:focus {
     color: var(--cor1);
     border-radius: 5px;
     border: 1px solid var(--cor1);
-    width:250px;
+    width:100%;
     padding: 10px;
     cursor: pointer;
 }
@@ -106,5 +121,5 @@ input:focus {
 
 span {
     color: white;
-    margin-left: 10px;
+    margin: 5px;
 }
