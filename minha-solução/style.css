@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1:#49a09d;
+    --cor2:#5f2c82;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+div#imagem {
+    background: url(..//imagens/metal.jpg) left center  no-repeat;
+    background-size: cover; 
+    height: 30vh;
+    border-radius: 20px 20px 0px 0px;
+}
+
+div#formulario{
+    margin: 10px
+}
+
+div#formulario > h1{
+    margin: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+
+input {
+    padding: 10px;
+    background-color: #92cfca;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    background-color: white;
+}
+
+.logins{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-entrar {
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width:250px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.btn-entrar:hover {
+    background-color: #25615f;
+}
+
+.btn-reset-senha{
+    background-color:white;
+    color: var(--cor1);
+    border-radius: 5px;
+    border: 1px solid var(--cor1);
+    width:250px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-reset-senha:hover {
+    background-color: var(--cor1);
+    color:#25615f ;
+}
+
+span {
+    color: white;
+    margin-left: 10px;
+}
